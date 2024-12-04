@@ -11,7 +11,7 @@ class JoySubscriberNode(Node):
         joy_axes=joy_msg.axes
         joy_axes0 = joy_axes[0]
         joy_axes1 = joy_axes[1]
-        # self.get_logger().info('Axes[0]:,%sAxes[1]:%s'%(str(joy_axes[0]),str(joy_axes[1])))
+        self.get_logger().info('Axes[0]:,%sAxes[1]:%s'%(str(joy_axes[0]),str(joy_axes[1])))
         self.get_logger().info('Axes[0]:%f, Axes[1]:%f' % (joy_axes0, joy_axes1))
 
 def main():
